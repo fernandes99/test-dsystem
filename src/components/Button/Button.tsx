@@ -1,4 +1,5 @@
 import React, { ComponentProps } from "react";
+import { S } from "./Button.styles";
 
 export interface ButtonProps extends ComponentProps<'button'> {
   label: string;
@@ -8,12 +9,12 @@ export interface ButtonProps extends ComponentProps<'button'> {
 
 function Button({ label, primary, backgroundColor, ...rest }: ButtonProps) {
   return (
-    <div>
+    <S.Container>
       <button style={{ backgroundColor, color: primary ? 'red' : 'black' }} {...rest} >
         {label}
         Eai
       </button>
-    </div>
+    </S.Container>
   );
 }
 
