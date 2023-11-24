@@ -6,7 +6,8 @@
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "npm version patch && npm publish"
   },
   "author": "",
   "license": "ISC",
